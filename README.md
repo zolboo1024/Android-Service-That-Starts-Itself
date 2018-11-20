@@ -17,4 +17,13 @@ method, you send a signal to a simple BroadcastReceiver. Then
 You create a BroadcastReceiver that is set up to receive signal when 
 the service is destroyed and starts the same service that just got killed!
 
+GO to MainActivity.java since it's the starting point of the application. This activity
+creates a button that is designed to start the service.
+
+GO to TypicalService.java to see an example of the service that is not being killed. 
+The main point of the service is at the end- onDestroy() method.
+
+GO to BroadcastToRestartService.java to see how the broadcast calls the service again 
+when it is shut down and the broadcast is sent.
+
 Hope you find something useful here! Cheers!
